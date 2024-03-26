@@ -19,7 +19,7 @@ fun Splash(navController : NavHostController){
         val logo = createRef()
 
         Image(
-            painter = painterResource(id = R.drawable.wallpaper),
+            painter = painterResource(id = R.drawable.thr),
             contentDescription = "mainScreen",
             modifier = Modifier
                 .constrainAs(logo) {
