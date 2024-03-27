@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "294783090444",
+    "project_id": "threads-1da35",
+    "storage_bucket": "threads-1da35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294783090444:android:5fdcbb4fe4a6be013f1329",
+        "android_client_info": {
+          "package_name": "com.aditys.threads"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0UMOEq4fXQnyycgIeY_D-3EtUdDY5Mqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

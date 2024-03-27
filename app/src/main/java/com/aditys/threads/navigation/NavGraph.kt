@@ -9,8 +9,10 @@ import androidx.navigation.compose.composable
 import com.aditys.threads.screens.AddThreads
 import com.aditys.threads.screens.BottomNav
 import com.aditys.threads.screens.Home
+import com.aditys.threads.screens.Login
 import com.aditys.threads.screens.Notification
 import com.aditys.threads.screens.Profile
+import com.aditys.threads.screens.Register
 import com.aditys.threads.screens.Search
 import com.aditys.threads.screens.Splash
 
@@ -42,6 +44,14 @@ fun NavGraph(navController: NavHostController){
 
         composable(Routes.BottomNav.routes){
             BottomNav(navController)
+        }
+
+        composable(Routes.Login.routes){
+            Login(navController)
+        }
+
+        composable(Routes.Register.routes){
+            Register(navController)
         }
 
     }
