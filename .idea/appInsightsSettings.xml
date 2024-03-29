@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.aditys.threads" />
+                  <option name="mobileSdkAppId" value="1:294783090444:android:5fdcbb4fe4a6be013f1329" />
+                  <option name="projectId" value="threads-1da35" />
+                  <option name="projectNumber" value="294783090444" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

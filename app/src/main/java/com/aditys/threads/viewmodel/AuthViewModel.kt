@@ -16,4 +16,7 @@ class AuthViewModel : ViewModel() {
     private val _firebaseUser = MutableLiveData<FirebaseUser>()
     val firebaseUser: LiveData<FirebaseUser> = _firebaseUser
 
+    private val _error = MutableLiveData<String>()
+    val error: LiveData<String> = _error
+
 }
