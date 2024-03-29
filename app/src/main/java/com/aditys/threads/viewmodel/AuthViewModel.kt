@@ -10,7 +10,7 @@ import com.google.firebase.database.FirebaseDatabase
 class AuthViewModel : ViewModel() {
 
     val auth = FirebaseAuth.getInstance()
-     private val db = FirebaseDatabase.getInstance()
+    private val db = FirebaseDatabase.getInstance()
     val userRef = db.getReference("users")
 
     private val _firebaseUser = MutableLiveData<FirebaseUser>()
@@ -19,4 +19,31 @@ class AuthViewModel : ViewModel() {
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
 
+    init {
+        _firebaseUser.value = auth.currentUser
+    }
+
+    fun login(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    _firebaseUser.postValue(auth.currentUser)
+                } else {
+                    _error.postValue("Something went wrong.")
+                }
+            }
+
+        fun register(email: String, password: String, name: String, bio: String, userName: String) {
+            auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        _firebaseUser.postValue(auth.currentUser)
+                    } else {
+                        _error.postValue("Something went wrong.")
+                    }
+                }
+
+        }
+
+    }
 }
